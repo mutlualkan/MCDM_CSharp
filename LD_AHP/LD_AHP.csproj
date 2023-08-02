@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCEE1149-A328-42AD-A4B7-7E3B04FCD9B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LD_AHP</RootNamespace>
+    <AssemblyName>LD_AHP</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\LD_AHPs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\LD_AHPs.Designer.cs">
+      <DependentUpon>LD_AHPs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DefineProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DefineProject.Designer.cs">
+      <DependentUpon>DefineProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_AHP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LD_ComparisonChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LD_ComparisonChart.Designer.cs">
+      <DependentUpon>LD_ComparisonChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_ComparisonMatrix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LD_ComparisonMatrix.Designer.cs">
+      <DependentUpon>LD_ComparisonMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_ComparisonTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LD_ComparisonTool.Designer.cs">
+      <DependentUpon>LD_ComparisonTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_ComparisonToolBS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LD_ComparisonToolBS.Designer.cs">
+      <DependentUpon>LD_ComparisonToolBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_ConsistencyRatio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LD_ConsistencyRatio.Designer.cs">
+      <DependentUpon>LD_ConsistencyRatio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_DefiningCriteria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LD_DefiningCriteria.Designer.cs">
+      <DependentUpon>LD_DefiningCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_EigenVector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LD_EigenVector.Designer.cs">
+      <DependentUpon>LD_EigenVector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_MultiplicationCMPV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LD_MultiplicationCMPV.Designer.cs">
+      <DependentUpon>LD_MultiplicationCMPV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_NormalizationMatrix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LD_NormalizationMatrix.Designer.cs">
+      <DependentUpon>LD_NormalizationMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_PriorityVector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LD_PriorityVector.Designer.cs">
+      <DependentUpon>LD_PriorityVector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\LD_AHPs.resx">
+      <DependentUpon>LD_AHPs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefineProject.resx">
+      <DependentUpon>DefineProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_ComparisonChart.resx">
+      <DependentUpon>LD_ComparisonChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_ComparisonTool.resx">
+      <DependentUpon>LD_ComparisonTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_ComparisonToolBS.resx">
+      <DependentUpon>LD_ComparisonToolBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_DefiningCriteria.resx">
+      <DependentUpon>LD_DefiningCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_NormalizationMatrix.resx">
+      <DependentUpon>LD_NormalizationMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
